@@ -9,21 +9,29 @@
 /* Begin PBXBuildFile section */
 		A64C6E1226CF961900F7970F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64C6E1126CF961900F7970F /* AppDelegate.swift */; };
 		A64C6E1426CF961900F7970F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64C6E1326CF961900F7970F /* SceneDelegate.swift */; };
-		A64C6E1626CF961900F7970F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64C6E1526CF961900F7970F /* ViewController.swift */; };
+		A64C6E1626CF961900F7970F /* NikeDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64C6E1526CF961900F7970F /* NikeDetailViewController.swift */; };
 		A64C6E1926CF961900F7970F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64C6E1726CF961900F7970F /* Main.storyboard */; };
 		A64C6E1B26CF961A00F7970F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A64C6E1A26CF961A00F7970F /* Assets.xcassets */; };
 		A64C6E1E26CF961A00F7970F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A64C6E1C26CF961A00F7970F /* LaunchScreen.storyboard */; };
+		A64C6E2926CF991B00F7970F /* NikeCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64C6E2826CF991B00F7970F /* NikeCollectionViewController.swift */; };
+		A64C6E2C26CF993800F7970F /* NikeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64C6E2B26CF993800F7970F /* NikeCollectionViewCell.swift */; };
+		A64C6E2F26CF9A5500F7970F /* Nike.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64C6E2E26CF9A5500F7970F /* Nike.swift */; };
+		A64C6E3226CFCA4100F7970F /* UIView+Snapshot.swift in Sources */ = {isa = PBXBuildFile; fileRef = A64C6E3126CFCA4100F7970F /* UIView+Snapshot.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A64C6E0E26CF961900F7970F /* DemoCollectionView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoCollectionView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A64C6E1126CF961900F7970F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A64C6E1326CF961900F7970F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		A64C6E1526CF961900F7970F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		A64C6E1526CF961900F7970F /* NikeDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeDetailViewController.swift; sourceTree = "<group>"; };
 		A64C6E1826CF961900F7970F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A64C6E1A26CF961A00F7970F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A64C6E1D26CF961A00F7970F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A64C6E1F26CF961A00F7970F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A64C6E2826CF991B00F7970F /* NikeCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeCollectionViewController.swift; sourceTree = "<group>"; };
+		A64C6E2B26CF993800F7970F /* NikeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NikeCollectionViewCell.swift; sourceTree = "<group>"; };
+		A64C6E2E26CF9A5500F7970F /* Nike.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Nike.swift; sourceTree = "<group>"; };
+		A64C6E3126CFCA4100F7970F /* UIView+Snapshot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Snapshot.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +64,67 @@
 		A64C6E1026CF961900F7970F /* DemoCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				A64C6E1126CF961900F7970F /* AppDelegate.swift */,
-				A64C6E1326CF961900F7970F /* SceneDelegate.swift */,
-				A64C6E1526CF961900F7970F /* ViewController.swift */,
-				A64C6E1726CF961900F7970F /* Main.storyboard */,
-				A64C6E1A26CF961A00F7970F /* Assets.xcassets */,
-				A64C6E1C26CF961A00F7970F /* LaunchScreen.storyboard */,
+				A64C6E3026CFCA3200F7970F /* Extension */,
+				A64C6E2D26CF9A4300F7970F /* Model */,
+				A64C6E2A26CF991F00F7970F /* Custom Cell */,
+				A64C6E2726CF963F00F7970F /* Controllers */,
+				A64C6E2626CF962F00F7970F /* Views */,
+				A64C6E2526CF962500F7970F /* Supporting Files */,
 				A64C6E1F26CF961A00F7970F /* Info.plist */,
 			);
 			path = DemoCollectionView;
+			sourceTree = "<group>";
+		};
+		A64C6E2526CF962500F7970F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A64C6E1126CF961900F7970F /* AppDelegate.swift */,
+				A64C6E1326CF961900F7970F /* SceneDelegate.swift */,
+				A64C6E1A26CF961A00F7970F /* Assets.xcassets */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A64C6E2626CF962F00F7970F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A64C6E1726CF961900F7970F /* Main.storyboard */,
+				A64C6E1C26CF961A00F7970F /* LaunchScreen.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A64C6E2726CF963F00F7970F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				A64C6E1526CF961900F7970F /* NikeDetailViewController.swift */,
+				A64C6E2826CF991B00F7970F /* NikeCollectionViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		A64C6E2A26CF991F00F7970F /* Custom Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A64C6E2B26CF993800F7970F /* NikeCollectionViewCell.swift */,
+			);
+			path = "Custom Cell";
+			sourceTree = "<group>";
+		};
+		A64C6E2D26CF9A4300F7970F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A64C6E2E26CF9A5500F7970F /* Nike.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A64C6E3026CFCA3200F7970F /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				A64C6E3126CFCA4100F7970F /* UIView+Snapshot.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,9 +197,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A64C6E1626CF961900F7970F /* ViewController.swift in Sources */,
+				A64C6E1626CF961900F7970F /* NikeDetailViewController.swift in Sources */,
 				A64C6E1226CF961900F7970F /* AppDelegate.swift in Sources */,
+				A64C6E2C26CF993800F7970F /* NikeCollectionViewCell.swift in Sources */,
 				A64C6E1426CF961900F7970F /* SceneDelegate.swift in Sources */,
+				A64C6E2F26CF9A5500F7970F /* Nike.swift in Sources */,
+				A64C6E2926CF991B00F7970F /* NikeCollectionViewController.swift in Sources */,
+				A64C6E3226CFCA4100F7970F /* UIView+Snapshot.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
