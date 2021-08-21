@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import ViewAnimator
 
 private let reuseIdentifier = "Cell"
 
@@ -20,11 +21,11 @@ class NikeCollectionViewController: UICollectionViewController {
     private var nikeSet: [Nike] = [
         Nike(name: "Nike Adapt", imageName: "nike1", description: "A breakthrough lacing system that electronically adjusts to the shape of your foot.", price: 350.00, isFeatured: false),
         Nike(name: "Nike Adapt", imageName: "nike2", description: "A breakthrough lacing system that electronically adjusts to the shape of your foot.", price: 350.00, isFeatured: false),
-        Nike(name: "Nike Adapt", imageName: "nike3", description: "A breakthrough lacing system that electronically adjusts to the shape of your foot.", price: 350.00, isFeatured: false),
+        Nike(name: "Nike Adapt", imageName: "nike7", description: "A breakthrough lacing system that electronically adjusts to the shape of your foot.", price: 350.00, isFeatured: false),
         Nike(name: "Nike Adapt", imageName: "nike4", description: "A breakthrough lacing system that electronically adjusts to the shape of your foot.", price: 350.00, isFeatured: false),
         Nike(name: "Nike Adapt", imageName: "nike5", description: "A breakthrough lacing system that electronically adjusts to the shape of your foot.", price: 350.00, isFeatured: false),
         Nike(name: "Nike Adapt", imageName: "nike6", description: "A breakthrough lacing system that electronically adjusts to the shape of your foot.", price: 350.00, isFeatured: false),
-        Nike(name: "Nike Adapt", imageName: "nike7", description: "A breakthrough lacing system that electronically adjusts to the shape of your foot.", price: 350.00, isFeatured: false),
+        Nike(name: "Nike Adapt", imageName: "nike3", description: "A breakthrough lacing system that electronically adjusts to the shape of your foot.", price: 350.00, isFeatured: false),
         Nike(name: "Nike Adapt", imageName: "nike8", description: "A breakthrough lacing system that electronically adjusts to the shape of your foot.", price: 350.00, isFeatured: false),
         Nike(name: "Nike Adapt", imageName: "nike9", description: "A breakthrough lacing system that electronically adjusts to the shape of your foot.", price: 350.00, isFeatured: false),
         Nike(name: "Nike Adapt", imageName: "nike10", description: "A breakthrough lacing system that electronically adjusts to the shape of your foot.", price: 350.00, isFeatured: false),
@@ -43,8 +44,18 @@ class NikeCollectionViewController: UICollectionViewController {
         updateSnapshot()
     }
     
-    // Cell layout
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        animateCell()
+    }
     
+    // MARK: - Animation
+    private func animateCell() {
+        let animations = AnimationType.random()
+        UIView.animate(views: collectionView.visibleCells, animations: [animations])
+    }
+    
+    // Cell layout
     private func customLayout() {
         if let layout = collectionViewLayout as? UICollectionViewFlowLayout {
             layout.itemSize = CGSize(width: 190, height: 250)
